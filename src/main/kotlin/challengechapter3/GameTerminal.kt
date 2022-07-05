@@ -1,5 +1,7 @@
 package com.humam.challengechapter3
 
+
+import challengechapter3.suitjepang.suitJepang
 import com.humam.challengechapter3.hopimpa.Hopimpa
 
 class GameTerminal{
@@ -27,7 +29,7 @@ class GameTerminal{
             val pilihGame = readLine()!!.toInt()
             when(pilihGame){
                 1 -> Hopimpa().GameHopimpa()
-                2 -> println("Suit Jepang")
+                2 -> suitJepang().GameJepang()
                 else -> println("Game Tidak ada")
             }
         }
